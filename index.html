@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>Simple Ajax Stack Test Page</title>
+		<script type="text/javascript" src="ajaxHistory.js"></script>
+		<script type="text/javascript" src="test.js"></script>
+	</head>
+
+	<body onload="history_update('addToHistory(\'stack bottom\')');">
+		<div id="mainDiv" align="center" style="margin-top: 100px">
+			<button onclick="addToHistory('apples');">Load apples</button>
+			<button onclick="addToHistory('pears');">Load pears</button>
+			<button onclick="addToHistory('oranges');">Load oranges</button>
+			<br />
+			<br />
+			<button onclick="history_back();">Load previous</button>
+			<br />
+			<br />
+			<span id="out"></span>
+			<br />
+		</div>
+	</body>
+</html>
